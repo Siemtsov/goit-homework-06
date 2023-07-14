@@ -25,15 +25,12 @@ body {
   letter-spacing: 0.02em;
 }
 .container {
-  outline: 1px solid red;
-  outline-offset: 2px;
+  /* outline: 1px solid red;
+  outline-offset: 2px; */
   min-width: 320px;
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  /* padding: 0 156px;
-  width: 1158px;
-  margin: 0 auto;*/
 }
 @media only screen and (min-width: 768px) {
   .container {
