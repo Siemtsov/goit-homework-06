@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link">
@@ -52,7 +52,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Section Hero -->
       <section class="hero-section">
@@ -125,7 +125,15 @@
           <h2 class="work-header">What are we doing</h2>
           <ul class="list work-list">
             <li class="work-list-element">
-              <img src="./images/pc-monitor.jpg" alt="Pc Monitor" width="360" />
+              <img
+                srcset="
+                  ./images/main-page/our-work-section/pc-monitor@1x.jpg,
+                  ./images/main-page/our-work-section/pc-monitor@2x.jpg
+                "
+                src="./images/main-page/our-work-section/pc-monitor@1x.jpg"
+                alt="Pc Monitor"
+                width="360"
+              />
             </li>
             <li class="work-list-element">
               <img
@@ -368,7 +376,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer-section">
+    <!-- <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-container-caption">
           <a href="./index.html" class="logo link footer-logo"
@@ -432,8 +440,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -516,7 +524,7 @@
           <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
