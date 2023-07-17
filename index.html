@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link">
@@ -51,8 +51,17 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Section Hero -->
       <section class="hero-section">
@@ -127,8 +136,8 @@
             <li class="work-list-element">
               <img
                 srcset="
-                  ./images/main-page/our-work-section/pc-monitor@1x.jpg,
-                  ./images/main-page/our-work-section/pc-monitor@2x.jpg
+                  ./images/main-page/our-work-section/pc-monitor@1x.jpg 1x,
+                  ./images/main-page/our-work-section/pc-monitor@2x.jpg 2x
                 "
                 src="./images/main-page/our-work-section/pc-monitor@1x.jpg"
                 alt="Pc Monitor"
@@ -137,14 +146,22 @@
             </li>
             <li class="work-list-element">
               <img
-                src="./images/telephone-display.jpg"
+                srcset="
+                  ./images/main-page/our-work-section/telephone-display@1x.jpg 1x,
+                  ./images/main-page/our-work-section/telephone-display@2x.jpg 2x
+                "
+                src="./images/main-page/our-work-section/telephone-display@1x.jpg"
                 alt="Telephone display"
                 width="360"
               />
             </li>
             <li class="work-list-element">
               <img
-                src="./images/telephone-laptop.jpg"
+                srcset="
+                  ./images/main-page/our-work-section/telephone-laptop@1x.jpg 1x,
+                  ./images/main-page/our-work-section/telephone-laptop@2x.jpg 2x
+                "
+                src="./images/main-page/our-work-section/telephone-laptop@1x.jpg"
                 alt="Telephone laptop"
                 width="360"
               />
@@ -159,7 +176,11 @@
           <ul class="list team-list">
             <li class="team-list-element">
               <img
-                src="./images/Mark-Guerrero.jpg"
+                srcset="
+                  ./images/main-page/our-team/img-1@1x.jpg 1x,
+                  ./images/main-page/our-team/img-1@2x.jpg 2x
+                "
+                src="./images/main-page/our-team/img-1@1x.jpg"
                 alt="Product Designer"
                 width="264"
               />
@@ -200,7 +221,11 @@
             </li>
             <li class="team-list-element">
               <img
-                src="./images/Tom-Ford.jpg"
+                srcset="
+                  ./images/main-page/our-team/img-2@1x.jpg 1x,
+                  ./images/main-page/our-team/img-2@2x.jpg 2x
+                "
+                src="./images/main-page/our-team/img-2@1x.jpg"
                 alt="Frontend Developer"
                 width="264"
               />
@@ -241,7 +266,11 @@
             </li>
             <li class="team-list-element">
               <img
-                src="./images/Camila-Garcia.jpg"
+                srcset="
+                  ./images/main-page/our-team/img-3@1x.jpg 1x,
+                  ./images/main-page/our-team/img-3@2x.jpg 2x
+                "
+                src="./images/main-page/our-team/img-3@1x.jpg"
                 alt="Marketing"
                 width="264"
               />
@@ -282,7 +311,11 @@
             </li>
             <li class="team-list-element">
               <img
-                src="./images/Daniel-Wilson.jpg"
+                srcset="
+                  ./images/main-page/our-team/img-4@1x.jpg 1x,
+                  ./images/main-page/our-team/img-4@2x.jpg 2x
+                "
+                src="./images/main-page/our-team/img-4@1x.jpg"
                 alt="UI Designer"
                 width="264"
               />
@@ -441,6 +474,7 @@
         </div>
       </div>
     </footer>
+    <!-- BACKDROP -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-btn" data-modal-close>
@@ -525,6 +559,76 @@
         </form>
       </div>
     </div>
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu x-close">
+        <svg class="x-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-element">
+          <a href="./index.html" class="link mob-menu-link">Studio</a>
+        </li>
+        <li class="mobile-menu-element">
+          <a href="./portfolio.html" class="link mob-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-element">
+          <a href="" class="link mob-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <address class="address-style">
+        <ul class="list">
+          <li class="mob-address-element">
+            <a href="tel: +110001111111" class="link mob-tel"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-address-element">
+            <a href="mailto:info@devstudio.com" class="link mob-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="list mob-media">
+        <li class="mob-element">
+          <a href="" class="mob-link link">
+            <svg class="social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-element">
+          <a href="" class="mob-link link">
+            <svg class="social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-element">
+          <a href="" class="mob-link link">
+            <svg class="social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-element">
+          <a href="" class="mob-link link">
+            <svg class="social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
