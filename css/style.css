@@ -186,12 +186,12 @@ img {
   align-items: center;
   gap: 40px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
   .header-address-list {
     display: inline;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
   .header-address-element:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -199,13 +199,14 @@ img {
 .address-link {
   color: var(--primary-slate);
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.32px;
 
   transition: color var(--primary-transition);
 }
 @media only screen and (min-width: 1158px) {
   .address-link {
+    line-height: 1.5;
     font-size: 16px;
   }
 }
