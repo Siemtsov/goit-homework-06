@@ -198,8 +198,16 @@ img {
 }
 .address-link {
   color: var(--primary-slate);
-  transition: color var(--primary-transition);
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+
+  transition: color var(--primary-transition);
+}
+@media only screen and (min-width: 1158px) {
+  .address-link {
+    font-size: 16px;
+  }
 }
 .address-link:hover,
 .address-link:focus,
